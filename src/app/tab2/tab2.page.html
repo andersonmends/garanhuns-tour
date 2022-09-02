@@ -10,17 +10,20 @@
     <ion-item-sliding>
       <ion-item>
         <ion-thumbnail slot="start">
-          <img src="https://garanhuns.pe.gov.br/gid/wp-content/uploads/2022/06/WhatsApp-Image-2022-06-23-at-00.06.03.jpeg" alt="">
+          <img
+            src="https://garanhuns.pe.gov.br/gid/wp-content/uploads/2022/06/WhatsApp-Image-2022-06-23-at-00.06.03.jpeg"
+            alt="">
         </ion-thumbnail>
         <ion-label>
-        <ion-text>
-          <h2>Festival de Inverno</h2>
-        </ion-text>  
+          <ion-text>
+            <h2>Festival de Inverno</h2>
+          </ion-text>
         </ion-label>
         <ion-note slot="end">Julho</ion-note>
       </ion-item>
       <ion-item-options side="end">
-        <ion-item-option (click)="openSite('https://garanhuns.pe.gov.br/festival-de-inverno-de-garanhuns-2022/')" color="danger">
+        <ion-item-option (click)="openSite('https://garanhuns.pe.gov.br/festival-de-inverno-de-garanhuns-2022/')"
+          color="danger">
           <ion-icon slot="icon-only" name="information-circle-outline"></ion-icon>
         </ion-item-option>
         <ion-item-option (click)="like()">
@@ -28,24 +31,56 @@
         </ion-item-option>
       </ion-item-options>
     </ion-item-sliding>
-  
+
     <ion-item-sliding>
       <ion-item>
-        <ion-thumbnail></ion-thumbnail>
-        <ion-label>Viva Domiguinhos</ion-label>
+        <ion-thumbnail slot="start">
+          <img
+            src="https://garanhuns.pe.gov.br/gid/wp-content/uploads/2018/03/WhatsApp-Image-2018-03-16-at-18.05.30.jpeg"
+            alt="">
+        </ion-thumbnail>
+        <ion-label>
+          <ion-text>
+            <h2>Festival Viva Domiguinhos</h2>
+          </ion-text>
+        </ion-label>
+        <ion-note slot="end">Abril</ion-note>
       </ion-item>
       <ion-item-options side="end">
-        <ion-item-option (click)="unread(item)">Unread</ion-item-option>
+        <ion-item-option
+          (click)="openSite('https://garanhuns.pe.gov.br/category/noticias/secretaria-de-turismo-e-cultura/viva-dominguinhos/')"
+          color="danger">
+          <ion-icon slot="icon-only" name="information-circle-outline"></ion-icon>
+        </ion-item-option>
+        <ion-item-option (click)="like()">
+          <ion-icon slot="icon-only" name="star-outline"></ion-icon>
+        </ion-item-option>
       </ion-item-options>
     </ion-item-sliding>
 
     <ion-item-sliding>
       <ion-item>
-        <ion-thumbnail></ion-thumbnail>
-        <ion-label>Encantos do Natal</ion-label>
+        <ion-thumbnail slot="start">
+          <img
+            src="https://1.bp.blogspot.com/-iuLlG_M65mI/XYSYvxVmZyI/AAAAAAABSjQ/ks9WurmuqHQFgFJv2SFvRyaSi8CUl5L3QCLcBGAsYHQ/s640/magia%257E2.jpg"
+            alt="">
+        </ion-thumbnail>
+        <ion-label>
+          <ion-text>
+            <h2>Encantos do Natal</h2>
+          </ion-text>
+        </ion-label>
+        <ion-note slot="end">Novembro</ion-note>
       </ion-item>
       <ion-item-options side="end">
-        <ion-item-option (click)="unread(item)">Unread</ion-item-option>
+        <ion-item-option
+          (click)="openSite('https://garanhuns.pe.gov.br/prefeitura-de-garanhuns-divulga-os-encantos-do-natal-aproveitando-sucesso-do-fig-30-anos/')"
+          color="danger">
+          <ion-icon slot="icon-only" name="information-circle-outline"></ion-icon>
+        </ion-item-option>
+        <ion-item-option (click)="like()">
+          <ion-icon slot="icon-only" name="star-outline"></ion-icon>
+        </ion-item-option>
       </ion-item-options>
     </ion-item-sliding>
 
