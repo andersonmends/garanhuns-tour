@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab2',
@@ -7,7 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Tab2Page implements OnInit {
 
-  constructor() { }
+  constructor(public toastController: ToastController) { }
+
+  openSite(url) {
+    window.open(url);
+  }
+
+  async like() {
+    const toast = await this.toastController.create({
+      message: 'Obrigado por curtir',
+      duration: 2000
+    });
+    toast.present();
+
+  }
 
   ngOnInit() {
   }
