@@ -10,7 +10,8 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
-  },  {
+  },
+  {
     path: 'tabs',
     loadChildren: () => import('./tabs/tabs.module').then( m => m.TabsPageModule)
   },
@@ -26,8 +27,10 @@ const routes: Routes = [
     path: 'tab3',
     loadChildren: () => import('./tab3/tab3.module').then( m => m.Tab3PageModule)
   },
-
-
+  {
+    path: 'euclides',
+    loadChildren: () => import('./parques/euclides/euclides.module').then( m => m.EuclidesPageModule)
+  },
 
 ];
 

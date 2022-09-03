@@ -1,9 +1,22 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>tab3</ion-title>
+  <ion-toolbar color="tertiary">
+    <ion-title>Parques</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content [fullscreen]="true">
+  <ion-list>
+    <ion-item [routerLink]="['/euclides']">
+      <ion-thumbnail slot="start">
+        <img src="https://pbs.twimg.com/media/EVKA9KjUwAkFBAY.jpg" alt="">
+      </ion-thumbnail>
+      <ion-label>
+        <ion-text>
+          <h2>Parque Euclides Dourado</h2>
+        </ion-text>
+        <ion-badge color="danger" slot="end"> Heliopólis</ion-badge>
+      </ion-label>
+      <ion-icon name="chevron-forward-outline" slot="end"></ion-icon>
+    </ion-item>
+  </ion-list>
 </ion-content>
